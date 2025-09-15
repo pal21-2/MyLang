@@ -1,0 +1,23 @@
+select main
+show
+set x 0
+set y 0
+move x y
+io w a s d wasd
+if= z w 1
+jmp 16 nz
+if= z s 1
+jmp 18 nz
+if= z d 1
+jmp 20 nz
+if= z a 1
+jmp 22 nz
+jmp 5
+sum+ y y 3
+jmp 9
+sum- y y 3
+jmp 11
+sum+ x x 3
+jmp 13
+sum- x x 3
+jmp 15

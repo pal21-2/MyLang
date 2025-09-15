@@ -1,0 +1,15 @@
+random r 0 255
+random g 0 255
+random b 0 255
+clr r g b
+set y 180
+set x -240
+pen x y 1
+set x 240
+pen x y 1
+if= a x 240
+jmp 7 z
+dec y
+if= a y -181
+if= a y -181
+jmp 6 z

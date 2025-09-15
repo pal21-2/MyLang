@@ -1,0 +1,38 @@
+select main
+show
+clone 0 0
+select 1
+show
+select main
+set n 0
+set m 0
+set x 0
+set y 0
+io w a s d wasd
+if= z w 1
+jmp 21 nz
+if= z s 1
+jmp 24 nz
+if= z d 1
+jmp 27 nz
+if= z a 1
+jmp 30 nz
+jmp 33
+sum+ y y 3
+sum- m m 3
+jmp 14
+sum- y y 3
+sum+ m m 3
+jmp 16
+sum+ x x 3
+sum- n n 3
+jmp 18
+sum- x x 3
+sum+ n n 3
+jmp 20
+select main
+move x y
+select 1
+move n m
+select main
+jmp 11

@@ -1,0 +1,10 @@
+select main
+show
+x = 0
+y = 0
+d = 0
+random x -40 40
+random y -32 32
+sum* x x 5
+sum* y y 5
+random d 0 7

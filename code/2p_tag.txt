@@ -1,0 +1,58 @@
+select main
+show
+costume 1
+clone 160 0
+select 1
+show
+costume 2
+select main
+set x -160
+set y 0
+set n 160
+set m 0
+io q w e r wasd
+io a s d f udlr
+if= z q 1
+jmp 24 nz
+if= z w 1
+jmp 26 nz
+if= z e 1
+jmp 28 nz
+if= z r 1
+jmp 30 nz
+jmp 32
+inc y
+jmp 17
+dec y
+jmp 19
+dec x
+jmp 21
+inc y
+jmp 23
+if= z a 1
+jmp 41 nz
+if= z s 1
+jmp 43 nz
+if= z d 1
+jmp 45 nz
+if= z f 1
+jmp 47 nz
+jmp 49
+inc m
+jmp 34
+dec m
+jmp 36
+dec n
+jmp 38
+inc n
+jmp 40
+select main
+move x y
+select 1
+move n m
+select main
+if= z x n
+jmp 13 z
+if= c y m
+jmp 13 z
+end
