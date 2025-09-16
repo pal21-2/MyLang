@@ -1,1 +1,24 @@
-
+{
+    "name": "pal-language-extension",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.100.0"
+    },
+    "main": "./extension.js",
+    "activationEvents": [
+        "*"
+    ],
+    "contributes": {
+        "languages": [
+            {
+               "id": "pal",
+               "extensions": [".pal"]
+            }
+        ],
+        "grammars": [{
+            "language": "pal",
+            "scopeName": "source.pal",
+            "path": "./pal.tmLanguage.json"
+        }]
+    }
+}

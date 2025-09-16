@@ -1,0 +1,28 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "pal",
+    "patterns": [
+        {
+            "include": "#keywords"
+        }
+    ],
+    "repository": {
+         "keywords": {
+             "patterns": [
+                {
+                    "name": "keyword.control",
+                    "match": "\\b(jmp|call|end|move|if=|if!=|if<|if!<|if>|if!>|if>=|if!>=|if!<=|if<=)\\b"
+                },
+                {
+                    "name": "keyword.other",
+                    "match": "\\b(sum+|sum*|sum+|sum-|set|inc|dec)\\b"
+                },
+                {
+                    "name": "variable",
+                    "match": "\\b(q|w|e|r|t|y|u|i|o|p|a|s|d|f|g|h|j|k|l|z|x|c|v|b|n|m)\\b"
+                }
+            ]
+        }
+    },
+    "scopeName": "source.pal"
+}
